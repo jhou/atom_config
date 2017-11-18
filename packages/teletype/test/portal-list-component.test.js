@@ -136,6 +136,26 @@ suite('PortalListComponent', function () {
     await condition(() => queryParticipantElements(guestPortalBindingsContainer).length === 2)
     assert(queryParticipantElement(guestPortalBindingsContainer, 1))
     assert(queryParticipantElement(guestPortalBindingsContainer, 2))
+    
+    // Insert a valid portal id but with leading and trailing whitespace.
+    await joinPortalComponent.showPrompt()
+
+    joinPortalComponent.refs.portalIdEditor.setText('\t  ' + hostPortal.id + '\n\r\n')
+    joinPortalComponent.joinPortal()
+
+    await condition(() => (
+      !joinPortalComponent.refs.joinPortalLabel &&
+      joinPortalComponent.refs.joiningSpinner &&
+      !joinPortalComponent.refs.portalIdEditor
+    ))
+    await condition(() => (
+      joinPortalComponent.refs.joinPortalLabel &&
+      !joinPortalComponent.refs.joiningSpinner &&
+      !joinPortalComponent.refs.portalIdEditor
+    ))
+    await condition(() => queryParticipantElements(guestPortalBindingsContainer).length === 2)
+    assert(queryParticipantElement(guestPortalBindingsContainer, 1))
+    assert(queryParticipantElement(guestPortalBindingsContainer, 2))
 
     // Simulate another guest joining the portal.
     const newGuestPortalBindingManager = await buildPortalBindingManager()
@@ -152,11 +172,20 @@ suite('PortalListComponent', function () {
     const {clipboard} = component.props
     const {joinPortalComponent} = component.refs
 
+    // Clipboard containing a portal ID
     clipboard.write('bc282ad8-7643-42cb-80ca-c243771a618f')
     await joinPortalComponent.showPrompt()
 
     assert.equal(joinPortalComponent.refs.portalIdEditor.getText(), 'bc282ad8-7643-42cb-80ca-c243771a618f')
 
+    // Clipboard containing a portal ID with surrounding whitespace
+    await joinPortalComponent.hidePrompt()
+    clipboard.write('\te40fa1b5-8144-4d09-9dff-c26e7b10b366  \n')
+    await joinPortalComponent.showPrompt()
+
+    assert.equal(joinPortalComponent.refs.portalIdEditor.getText(), 'e40fa1b5-8144-4d09-9dff-c26e7b10b366')
+
+    // Clipboard containing something that is NOT a portal ID
     await joinPortalComponent.hidePrompt()
     clipboard.write('not a portal id')
     await joinPortalComponent.showPrompt()

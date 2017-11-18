@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171015-34295-xsv8bq.4do9od2t9/package.tgz",
+        "raw": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171017-75939-190ewg1.44lmtb7qfr/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171015-34295-xsv8bq.4do9od2t9/package.tgz",
-        "spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171015-34295-xsv8bq.4do9od2t9/package.tgz",
+        "rawSpec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171017-75939-190ewg1.44lmtb7qfr/package.tgz",
+        "spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171017-75939-190ewg1.44lmtb7qfr/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/apm-install-dir-1171015-34295-gyq3em.r74v89qkt9"
+      "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/apm-install-dir-1171017-75939-aouxiz.xfdfsz6w29"
     ]
   ],
-  "_from": "../d-1171015-34295-xsv8bq.4do9od2t9/package.tgz",
-  "_id": "teletype@0.1.2",
+  "_from": "../d-1171017-75939-190ewg1.44lmtb7qfr/package.tgz",
+  "_id": "teletype@0.1.4",
   "_inCache": true,
   "_location": "/teletype",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171015-34295-xsv8bq.4do9od2t9/package.tgz",
+    "raw": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171017-75939-190ewg1.44lmtb7qfr/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171015-34295-xsv8bq.4do9od2t9/package.tgz",
-    "spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171015-34295-xsv8bq.4do9od2t9/package.tgz",
+    "rawSpec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171017-75939-190ewg1.44lmtb7qfr/package.tgz",
+    "spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171017-75939-190ewg1.44lmtb7qfr/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-1171015-34295-xsv8bq.4do9od2t9/package.tgz",
-  "_shasum": "ba2346556062e185b1599b50172dba2c360950cf",
+  "_resolved": "file:../d-1171017-75939-190ewg1.44lmtb7qfr/package.tgz",
+  "_shasum": "3da7b691207647b766cab0080ecde5ae48bf33a3",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171015-34295-xsv8bq.4do9od2t9/package.tgz",
-  "_where": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/apm-install-dir-1171015-34295-gyq3em.r74v89qkt9",
+  "_spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171017-75939-190ewg1.44lmtb7qfr/package.tgz",
+  "_where": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/apm-install-dir-1171017-75939-aouxiz.xfdfsz6w29",
   "atomTestRunner": "./test/setup",
   "author": "",
   "bugs": {
@@ -54,6 +54,13 @@
       "type": "string",
       "default": "f119821248b7429bece3",
       "order": 2
+    },
+    "pusherCluster": {
+      "title": "Pusher cluster name",
+      "description": "This should only be changed for development purposes. Changes take effect on the next package activation.",
+      "type": "string",
+      "default": "mt1",
+      "order": 3
     }
   },
   "consumedServices": {
@@ -64,7 +71,7 @@
     }
   },
   "dependencies": {
-    "@atom/teletype-client": "^0.27.0",
+    "@atom/teletype-client": "^0.28.1",
     "etch": "^0.12.6"
   },
   "description": "Share your workspace with team members and collaborate on code in real time",
@@ -75,7 +82,7 @@
     "temp": "^0.8.3"
   },
   "engines": {
-    "atom": ">=1.21.0"
+    "atom": ">=1.22.0"
   },
   "homepage": "https://github.com/atom/teletype#readme",
   "keywords": [
@@ -97,5 +104,5 @@
   "scripts": {
     "test": "atom --test test"
   },
-  "version": "0.1.2"
+  "version": "0.1.4"
 }

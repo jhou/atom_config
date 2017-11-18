@@ -24,6 +24,9 @@
 atom-text-editor {
   // color: white;
   // background-color: hsl(180, 24%, 12%);
+
+  // highlight trailing whitespace, but not on the current line
+  // (especially while typing)
   .line:not(.cursor-line) {
     .trailing-whitespace {
       background: #6f4848;
