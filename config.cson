@@ -1,0 +1,44 @@
+"*":
+  core:
+    destroyEmptyPanes: false
+    projectHome: "/Users/jeremyhou/work"
+    telemetryConsent: "limited"
+  editor:
+    fontSize: 13
+  "exception-reporting":
+    userId: "83fd4c88-1e49-4086-843f-d22e1f09348d"
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+    removeTrailingWhitespace: false
+".basic.html.text":
+  editor:
+    tabLength: 4
+    tabType: "soft"
+".console.python.text":
+  editor:
+    tabLength: 4
+".html.mako.text":
+  editor:
+    tabLength: 4
+    tabType: "soft"
+".js.regexp.replacement.source":
+  editor:
+    softWrapHangingIndent: 2
+    tabLength: 4
+".js.regexp.source":
+  editor:
+    softWrapHangingIndent: 2
+    tabLength: 4
+".js.source":
+  editor:
+    softWrapHangingIndent: 2
+    tabLength: 4
+".python.regexp.source":
+  editor:
+    tabType: "soft"
+".python.source":
+  editor:
+    tabType: "soft"
+".python.text.traceback":
+  editor:
+    tabLength: 4
