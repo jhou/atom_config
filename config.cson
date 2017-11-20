@@ -11,12 +11,14 @@
     showOnStartup: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
-    removeTrailingWhitespace: false
 ".basic.html.text":
   editor:
     tabLength: 4
     tabType: "soft"
 ".console.python.text":
+  editor:
+    tabLength: 4
+".css.less.source":
   editor:
     tabLength: 4
 ".html.mako.text":
