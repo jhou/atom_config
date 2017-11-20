@@ -7,6 +7,8 @@
     fontSize: 13
   "exception-reporting":
     userId: "83fd4c88-1e49-4086-843f-d22e1f09348d"
+  welcome:
+    showOnStartup: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
     removeTrailingWhitespace: false
