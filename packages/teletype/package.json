@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171017-75939-190ewg1.44lmtb7qfr/package.tgz",
+        "raw": "/tmp/d-1171020-8842-1b7wbkz.dakmqs38fr/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171017-75939-190ewg1.44lmtb7qfr/package.tgz",
-        "spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171017-75939-190ewg1.44lmtb7qfr/package.tgz",
+        "rawSpec": "/tmp/d-1171020-8842-1b7wbkz.dakmqs38fr/package.tgz",
+        "spec": "/tmp/d-1171020-8842-1b7wbkz.dakmqs38fr/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/apm-install-dir-1171017-75939-aouxiz.xfdfsz6w29"
+      "/tmp/apm-install-dir-1171020-8842-1om4o06.86ui6q1tt9"
     ]
   ],
-  "_from": "../d-1171017-75939-190ewg1.44lmtb7qfr/package.tgz",
-  "_id": "teletype@0.1.4",
+  "_from": "../d-1171020-8842-1b7wbkz.dakmqs38fr/package.tgz",
+  "_id": "teletype@0.2.2",
   "_inCache": true,
   "_location": "/teletype",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171017-75939-190ewg1.44lmtb7qfr/package.tgz",
+    "raw": "/tmp/d-1171020-8842-1b7wbkz.dakmqs38fr/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171017-75939-190ewg1.44lmtb7qfr/package.tgz",
-    "spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171017-75939-190ewg1.44lmtb7qfr/package.tgz",
+    "rawSpec": "/tmp/d-1171020-8842-1b7wbkz.dakmqs38fr/package.tgz",
+    "spec": "/tmp/d-1171020-8842-1b7wbkz.dakmqs38fr/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-1171017-75939-190ewg1.44lmtb7qfr/package.tgz",
-  "_shasum": "3da7b691207647b766cab0080ecde5ae48bf33a3",
+  "_resolved": "file:../d-1171020-8842-1b7wbkz.dakmqs38fr/package.tgz",
+  "_shasum": "165a12840d047d20f2d87d2c93b4e54cfb3c5531",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171017-75939-190ewg1.44lmtb7qfr/package.tgz",
-  "_where": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/apm-install-dir-1171017-75939-aouxiz.xfdfsz6w29",
+  "_spec": "/tmp/d-1171020-8842-1b7wbkz.dakmqs38fr/package.tgz",
+  "_where": "/tmp/apm-install-dir-1171020-8842-1om4o06.86ui6q1tt9",
   "atomTestRunner": "./test/setup",
   "author": "",
   "bugs": {
@@ -104,5 +104,5 @@
   "scripts": {
     "test": "atom --test test"
   },
-  "version": "0.1.4"
+  "version": "0.2.2"
 }

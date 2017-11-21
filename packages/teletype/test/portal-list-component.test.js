@@ -94,33 +94,42 @@ suite('PortalListComponent', function () {
     assert(joinPortalComponent.refs.joinPortalLabel)
     assert(!joinPortalComponent.refs.portalIdEditor)
     assert(!joinPortalComponent.refs.joiningSpinner)
+    assert(!joinPortalComponent.refs.joinButton)
 
     await joinPortalComponent.showPrompt()
 
     assert(!joinPortalComponent.refs.joinPortalLabel)
+    assert(joinPortalComponent.refs.joinButton.disabled)
     assert(joinPortalComponent.refs.portalIdEditor)
     assert(!joinPortalComponent.refs.joiningSpinner)
 
+    // Attempt to join without inserting a portal id.
+    await joinPortalComponent.joinPortal()
+
+    assert.equal(component.props.notificationManager.errorCount, 1)
+    assert(!joinPortalComponent.refs.joinPortalLabel)
+    assert(!joinPortalComponent.refs.joiningSpinner)
+    assert(joinPortalComponent.refs.portalIdEditor)
+    assert(joinPortalComponent.refs.joinButton.disabled)
+
     // Insert an invalid portal id.
     joinPortalComponent.refs.portalIdEditor.setText('invalid-portal-id')
-    joinPortalComponent.joinPortal()
+    assert(joinPortalComponent.refs.joinButton.disabled)
 
-    await condition(() => (
-      !joinPortalComponent.refs.joinPortalLabel &&
-      joinPortalComponent.refs.joiningSpinner &&
-      !joinPortalComponent.refs.portalIdEditor
-    ))
-    await condition(() => (
-      !joinPortalComponent.refs.joinPortalLabel &&
-      !joinPortalComponent.refs.joiningSpinner &&
-      joinPortalComponent.refs.portalIdEditor
-    ))
+    await joinPortalComponent.joinPortal()
+
+    assert.equal(component.props.notificationManager.errorCount, 2)
+    assert(!joinPortalComponent.refs.joinPortalLabel)
+    assert(!joinPortalComponent.refs.joiningSpinner)
+    assert(joinPortalComponent.refs.portalIdEditor)
 
     // Insert a valid portal id.
     const hostPortalBindingManager = await buildPortalBindingManager()
     const {portal: hostPortal} = await hostPortalBindingManager.createHostPortalBinding()
 
     joinPortalComponent.refs.portalIdEditor.setText(hostPortal.id)
+    assert(!joinPortalComponent.refs.joinButton.disabled)
+
     joinPortalComponent.joinPortal()
 
     await condition(() => (
@@ -136,7 +145,7 @@ suite('PortalListComponent', function () {
     await condition(() => queryParticipantElements(guestPortalBindingsContainer).length === 2)
     assert(queryParticipantElement(guestPortalBindingsContainer, 1))
     assert(queryParticipantElement(guestPortalBindingsContainer, 2))
-    
+
     // Insert a valid portal id but with leading and trailing whitespace.
     await joinPortalComponent.showPrompt()
 
@@ -204,9 +213,11 @@ suite('PortalListComponent', function () {
   }
 
   async function buildComponent () {
-    const portalBindingManager = await buildPortalBindingManager()
+    const notificationManager = new FakeNotificationManager()
+    const portalBindingManager = await buildPortalBindingManager({notificationManager})
     const component = new PortalListComponent({
       portalBindingManager,
+      notificationManager,
       clipboard: new FakeClipboard(),
       commandRegistry: new FakeCommandRegistry(),
       localUserIdentity: portalBindingManager.client.getLocalUserIdentity()
@@ -216,7 +227,7 @@ suite('PortalListComponent', function () {
     return {component, element: component.element, portalBindingManager}
   }
 
-  async function buildPortalBindingManager () {
+  async function buildPortalBindingManager (options = {}) {
     const client = new TeletypeClient({
       baseURL: testServer.address,
       pubSubGateway: testServer.pubSubGateway
@@ -227,7 +238,7 @@ suite('PortalListComponent', function () {
     const portalBindingManager = new PortalBindingManager({
       client,
       workspace: new FakeWorkspace(),
-      notificationManager: new FakeNotificationManager()
+      notificationManager: options.notificationManager || new FakeNotificationManager()
     })
     portalBindingManagers.push(portalBindingManager)
     return portalBindingManager
@@ -247,13 +258,19 @@ class FakeWorkspace {
 }
 
 class FakeNotificationManager {
+  constructor () {
+    this.errorCount = 0
+  }
+
   addInfo () {}
 
   addSuccess () {}
 
-  addError () {}
+  addError () {
+    this.errorCount++
+  }
 }
 
 class FakeCommandRegistry {
-  add () {}
+  add () { return new Set() }
 }

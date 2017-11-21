@@ -3,10 +3,17 @@
     destroyEmptyPanes: false
     projectHome: "/Users/jeremyhou/work"
     telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "base16-tomorrow-dark-theme"
+    ]
   editor:
     fontSize: 13
+    lineHeight: 1.2
   "exception-reporting":
     userId: "83fd4c88-1e49-4086-843f-d22e1f09348d"
+  "one-dark-ui":
+    tabSizing: "Minimum"
   welcome:
     showOnStartup: false
   whitespace:
