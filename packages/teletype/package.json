@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171030-33867-1bugbth.12zkznnrk9/package.tgz",
+        "raw": "/tmp/d-1171020-8842-1b7wbkz.dakmqs38fr/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171030-33867-1bugbth.12zkznnrk9/package.tgz",
-        "spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171030-33867-1bugbth.12zkznnrk9/package.tgz",
+        "rawSpec": "/tmp/d-1171020-8842-1b7wbkz.dakmqs38fr/package.tgz",
+        "spec": "/tmp/d-1171020-8842-1b7wbkz.dakmqs38fr/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/apm-install-dir-1171030-33867-5oe5t3.xdck1n61or"
+      "/tmp/apm-install-dir-1171020-8842-1om4o06.86ui6q1tt9"
     ]
   ],
-  "_from": "../d-1171030-33867-1bugbth.12zkznnrk9/package.tgz",
-  "_id": "teletype@0.2.3",
+  "_from": "../d-1171020-8842-1b7wbkz.dakmqs38fr/package.tgz",
+  "_id": "teletype@0.2.2",
   "_inCache": true,
   "_location": "/teletype",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171030-33867-1bugbth.12zkznnrk9/package.tgz",
+    "raw": "/tmp/d-1171020-8842-1b7wbkz.dakmqs38fr/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171030-33867-1bugbth.12zkznnrk9/package.tgz",
-    "spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171030-33867-1bugbth.12zkznnrk9/package.tgz",
+    "rawSpec": "/tmp/d-1171020-8842-1b7wbkz.dakmqs38fr/package.tgz",
+    "spec": "/tmp/d-1171020-8842-1b7wbkz.dakmqs38fr/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-1171030-33867-1bugbth.12zkznnrk9/package.tgz",
-  "_shasum": "9b3178cd60c1a0ea98e88403307426a94e140162",
+  "_resolved": "file:../d-1171020-8842-1b7wbkz.dakmqs38fr/package.tgz",
+  "_shasum": "165a12840d047d20f2d87d2c93b4e54cfb3c5531",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-1171030-33867-1bugbth.12zkznnrk9/package.tgz",
-  "_where": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/apm-install-dir-1171030-33867-5oe5t3.xdck1n61or",
+  "_spec": "/tmp/d-1171020-8842-1b7wbkz.dakmqs38fr/package.tgz",
+  "_where": "/tmp/apm-install-dir-1171020-8842-1om4o06.86ui6q1tt9",
   "atomTestRunner": "./test/setup",
   "author": "",
   "bugs": {
@@ -71,12 +71,12 @@
     }
   },
   "dependencies": {
-    "@atom/teletype-client": "^0.28.2",
+    "@atom/teletype-client": "^0.28.1",
     "etch": "^0.12.6"
   },
   "description": "Share your workspace with team members and collaborate on code in real time",
   "devDependencies": {
-    "@atom/teletype-server": "^0.17.0",
+    "@atom/teletype-server": "^0.16.0",
     "atom-mocha-test-runner": "^1.0.1",
     "deep-equal": "^1.0.1",
     "temp": "^0.8.3"
@@ -104,5 +104,5 @@
   "scripts": {
     "test": "atom --test test"
   },
-  "version": "0.2.3"
+  "version": "0.2.2"
 }
