@@ -41,6 +41,9 @@ class TeletypePackage {
 
     this.subscriptions = new CompositeDisposable()
 
+    this.subscriptions.add(this.commandRegistry.add('atom-workspace.teletype-Authenticated', {
+      'teletype:sign-out': () => this.signOut()
+    }))
     this.subscriptions.add(this.commandRegistry.add('atom-workspace', {
       'teletype:share-portal': () => this.sharePortal()
     }))
@@ -112,7 +115,8 @@ class TeletypePackage {
       tooltipManager: this.tooltipManager,
       commandRegistry: this.commandRegistry,
       clipboard: this.clipboard,
-      workspace: this.workspace
+      workspace: this.workspace,
+      notificationManager: this.notificationManager
     })
 
     this.portalStatusBarIndicator.attach()
@@ -124,6 +128,14 @@ class TeletypePackage {
       return authenticationProvider.signInUsingSavedToken()
     } else {
       return false
+    }
+  }
+
+  async signOut () {
+    const authenticationProvider = await this.getAuthenticationProvider()
+    if (authenticationProvider) {
+      this.portalStatusBarIndicator.showPopover()
+      await authenticationProvider.signOut()
     }
   }
 
@@ -167,7 +179,8 @@ class TeletypePackage {
           resolve(new AuthenticationProvider({
             client,
             credentialCache: this.credentialCache,
-            notificationManager: this.notificationManager
+            notificationManager: this.notificationManager,
+            workspace: this.workspace
           }))
         } else {
           this.authenticationProviderPromise = null

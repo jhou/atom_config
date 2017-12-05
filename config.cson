@@ -5,6 +5,8 @@
     telemetryConsent: "limited"
   editor:
     fontSize: 13
+    showIndentGuide: true
+    tabLength: 4
   "exception-reporting":
     userId: "83fd4c88-1e49-4086-843f-d22e1f09348d"
   welcome:
