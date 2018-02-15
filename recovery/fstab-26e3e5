@@ -1,0 +1,13 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/nvme0n1p7 during installation
+UUID=ff6c727b-3e7c-418d-ba8e-cdaa92c86386 /               ext4    errors=remount-ro 0       1
+# swap was on /dev/nvme0n1p1 during installation
+UUID=8b414069-329f-4cb1-a094-cc5609f182b5 none            swap    sw              0       0
+# home NAS CIFS share
+//192.168.1.253/home /home/jeremy/nashome 		  cifs	  credentials=/home/jeremy/.homeNAScredentials,rw,hard,nosetuids,noperm,sec=ntlm 0 0 
