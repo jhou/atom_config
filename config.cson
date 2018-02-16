@@ -15,6 +15,10 @@
   "exception-reporting":
     userId: "83fd4c88-1e49-4086-843f-d22e1f09348d"
   "one-dark-ui": {}
+  "pretty-json":
+    grammars: [
+      "source.json"
+    ]
   welcome:
     showOnStartup: false
   whitespace:
