@@ -28,10 +28,15 @@ atom-text-editor {
 
   // highlight trailing whitespace, but not on the current line
   // (especially while typing)
-  .line:not(.cursor-line) {
-    .trailing-whitespace {
-      background: #6f4848;
-    }
+  .line {
+      &:not(.cursor-line) {
+          .trailing-whitespace {
+              background: #6f4848;
+          }
+      }
+      &.cursor-line {
+          background-color: #161719;
+      }
   }
 }
 
