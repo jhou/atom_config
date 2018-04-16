@@ -33,3 +33,6 @@
 'body':
   'ctrl-left': 'window:focus-previous-pane'
   'ctrl-right': 'window:focus-next-pane'
+
+'atom-text-editor':
+  'shift-cmd-j': 'pretty-json:prettify'
