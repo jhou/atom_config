@@ -23,3 +23,42 @@
   'pdb':
     'prefix': 'pdb'
     'body': 'import pdb; pdb.set_trace()\n'
+
+
+'.source.js':
+  ## Angular-specific helpers
+  '$timeout':
+    'prefix': 'to'
+    'body': """
+        $timeout(${2:function() {$1\\}}$3)
+    """
+  '$scope Method':
+    'prefix': 'smeth'
+    'body': """
+        ${1:/**
+         * @name $scope.${2:methodName}
+         * @function
+         * @memberOf ${3:ParentClass}
+         * @description ${4:Method description} ${5:
+         * @returns \\{${6:return type e.g. int}\\}} ${7:
+         * @param \\{${8:Param type e.g. int}\\} ${9:Param name} - ${10:Param description}}
+         */}
+        $scope.${2:methodName} = function(${11:params}) {
+            ${12:// code goes here!}
+        }
+    """
+  'Method':
+    'prefix': 'meth'
+    'body': """
+        ${1:/**
+         * @name ${2:methodName}
+         * @function
+         * @memberOf ${3:ParentClass}
+         * @description ${4:Method description} ${5:
+         * @returns \\{${6:return type e.g. int}\\}} ${7:
+         * @param \\{${8:Param type e.g. int}\\} ${9:Param name} - ${10:Param description}}
+         */}
+        function ${2:methodName}(${11:params}) {
+            ${12:// code goes here!}
+        }
+    """
