@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-11826-23394-3p2kao.t9aetmaemi/package.tgz",
+        "raw": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-11857-44134-1a124j0.f1gqoajor/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-11826-23394-3p2kao.t9aetmaemi/package.tgz",
-        "spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-11826-23394-3p2kao.t9aetmaemi/package.tgz",
+        "rawSpec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-11857-44134-1a124j0.f1gqoajor/package.tgz",
+        "spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-11857-44134-1a124j0.f1gqoajor/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/apm-install-dir-11826-23394-hewfhm.d77imjkyb9"
+      "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/apm-install-dir-11857-44134-1mgtg7c.iwbcu40a4i"
     ]
   ],
-  "_from": "../d-11826-23394-3p2kao.t9aetmaemi/package.tgz",
-  "_id": "pretty-json@2.0.0",
+  "_from": "../d-11857-44134-1a124j0.f1gqoajor/package.tgz",
+  "_id": "pretty-json@2.0.1",
   "_inCache": true,
   "_location": "/pretty-json",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-11826-23394-3p2kao.t9aetmaemi/package.tgz",
+    "raw": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-11857-44134-1a124j0.f1gqoajor/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-11826-23394-3p2kao.t9aetmaemi/package.tgz",
-    "spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-11826-23394-3p2kao.t9aetmaemi/package.tgz",
+    "rawSpec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-11857-44134-1a124j0.f1gqoajor/package.tgz",
+    "spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-11857-44134-1a124j0.f1gqoajor/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-11826-23394-3p2kao.t9aetmaemi/package.tgz",
-  "_shasum": "b7d0e01830a2cd0407f16fcdddb967662128159d",
+  "_resolved": "file:../d-11857-44134-1a124j0.f1gqoajor/package.tgz",
+  "_shasum": "213c15c2f050ae01c5e64c4caddc6423b80236e4",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-11826-23394-3p2kao.t9aetmaemi/package.tgz",
-  "_where": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/apm-install-dir-11826-23394-hewfhm.d77imjkyb9",
+  "_spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-11857-44134-1a124j0.f1gqoajor/package.tgz",
+  "_where": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/apm-install-dir-11857-44134-1mgtg7c.iwbcu40a4i",
   "bugs": {
     "url": "https://github.com/federomero/pretty-json/issues"
   },
@@ -76,5 +76,5 @@
     "url": "git+https://github.com/federomero/pretty-json.git"
   },
   "scripts": {},
-  "version": "2.0.0"
+  "version": "2.0.1"
 }
