@@ -22,8 +22,13 @@
 '.source.python':
   'pdb':
     'prefix': 'pdb'
-    'body': 'import pdb; pdb.set_trace()\n'
+    'body': 'import pdb; pdb.set_trace()'
 
+
+'.source.html':
+  'data-selenium-testing':
+    'prefix': 'dst'
+    'body': 'data-selenium-testing=""'
 
 '.source.js':
   ## Angular-specific helpers
