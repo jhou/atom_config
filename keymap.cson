@@ -31,8 +31,8 @@
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson
 'body':
-  'ctrl-left': 'window:focus-previous-pane'
-  'ctrl-right': 'window:focus-next-pane'
+  'ctrl-alt-left': 'window:focus-previous-pane'
+  'ctrl-alt-right': 'window:focus-next-pane'
 
 'atom-text-editor':
   'shift-cmd-j': 'pretty-json:prettify'
