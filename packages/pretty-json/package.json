@@ -2,56 +2,56 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-118713-14297-8sq9vd.hyd4t5ipb9/package.tgz",
+        "raw": "/tmp/d-118717-12734-9t8l9c.23fn2buik9/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-118713-14297-8sq9vd.hyd4t5ipb9/package.tgz",
-        "spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-118713-14297-8sq9vd.hyd4t5ipb9/package.tgz",
+        "rawSpec": "/tmp/d-118717-12734-9t8l9c.23fn2buik9/package.tgz",
+        "spec": "/tmp/d-118717-12734-9t8l9c.23fn2buik9/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/apm-install-dir-118713-14297-1hb4ugl.x94927qfr"
+      "/tmp/apm-install-dir-118717-12734-j305u1.61tie5qaor"
     ]
   ],
-  "_from": "../d-118713-14297-8sq9vd.hyd4t5ipb9/package.tgz",
-  "_id": "pretty-json@2.0.2",
+  "_from": "../d-118717-12734-9t8l9c.23fn2buik9/package.tgz",
+  "_id": "pretty-json@2.0.3",
   "_inCache": true,
   "_location": "/pretty-json",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-118713-14297-8sq9vd.hyd4t5ipb9/package.tgz",
+    "raw": "/tmp/d-118717-12734-9t8l9c.23fn2buik9/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-118713-14297-8sq9vd.hyd4t5ipb9/package.tgz",
-    "spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-118713-14297-8sq9vd.hyd4t5ipb9/package.tgz",
+    "rawSpec": "/tmp/d-118717-12734-9t8l9c.23fn2buik9/package.tgz",
+    "spec": "/tmp/d-118717-12734-9t8l9c.23fn2buik9/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118713-14297-8sq9vd.hyd4t5ipb9/package.tgz",
-  "_shasum": "9d4881b1b36ef4e75e6db9e0ef870f01ee00bc25",
+  "_resolved": "file:../d-118717-12734-9t8l9c.23fn2buik9/package.tgz",
+  "_shasum": "e5ba831f362e2dce2b387995d8b9dd21d4eef139",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/d-118713-14297-8sq9vd.hyd4t5ipb9/package.tgz",
-  "_where": "/private/var/folders/gd/b2ntkrv137j2v7q0flh2zhc80000gr/T/apm-install-dir-118713-14297-1hb4ugl.x94927qfr",
+  "_spec": "/tmp/d-118717-12734-9t8l9c.23fn2buik9/package.tgz",
+  "_where": "/tmp/apm-install-dir-118717-12734-j305u1.61tie5qaor",
   "bugs": {
     "url": "https://github.com/federomero/pretty-json/issues"
   },
   "dependencies": {
-    "bignumber.js": "^2.4.0",
-    "json-bigint": "^0.2.3",
+    "bignumber.js": "^7.2.1",
+    "json-bigint": "^0.3.0",
     "json-stable-stringify": "^1.0.1",
     "jsonminify": "^0.4.1"
   },
   "description": "Format JSON",
   "devDependencies": {
-    "eslint": "^4.18.1",
+    "eslint": "^5.3.0",
     "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
   },
   "engines": {
     "atom": "*"
@@ -76,5 +76,5 @@
     "url": "git+https://github.com/federomero/pretty-json.git"
   },
   "scripts": {},
-  "version": "2.0.2"
+  "version": "2.0.3"
 }
