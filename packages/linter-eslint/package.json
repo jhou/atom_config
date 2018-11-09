@@ -1,0 +1,248 @@
+{
+  "_from": "https://www.atom.io/api/packages/linter-eslint/versions/8.4.1/tarball",
+  "_id": "linter-eslint@8.4.1",
+  "_inBundle": false,
+  "_integrity": "sha512-JA8pG3dDa5ZXr6nznXDSJbNpV+V75+d6fa0rEpIKp+M39VwIQHs1Q1FPVG/y0F/9uFHK3GdaBEEr1Z/9iS6JGA==",
+  "_location": "/linter-eslint",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/linter-eslint/versions/8.4.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/linter-eslint/versions/8.4.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/linter-eslint/versions/8.4.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/linter-eslint/versions/8.4.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/linter-eslint/versions/8.4.1/tarball",
+  "_shasum": "0b8426a3b6f1b08c788fc1a27a1b183f39f81ead",
+  "_spec": "https://www.atom.io/api/packages/linter-eslint/versions/8.4.1/tarball",
+  "_where": "/private/var/folders/g0/n8f6grg55t9bgdfch_kgw5cr0000gp/T/apm-install-dir-118101-5474-1om8sec.t79b",
+  "atomTranspilers": [
+    {
+      "glob": "{src,spec}/*.js",
+      "transpiler": "atom-babel6-transpiler",
+      "options": {
+        "setBabelEnv": false,
+        "babel": {
+          "presets": [
+            [
+              "env",
+              {
+                "targets": {
+                  "node": "current"
+                }
+              }
+            ]
+          ],
+          "sourceMaps": "inline",
+          "babelrc": false
+        },
+        "cacheKeyFiles": [
+          "package.json"
+        ]
+      }
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/AtomLinter/linter-eslint/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "lintHtmlFiles": {
+      "title": "Lint HTML Files",
+      "description": "You should also add `eslint-plugin-html` to your .eslintrc plugins",
+      "type": "boolean",
+      "default": false
+    },
+    "useGlobalEslint": {
+      "title": "Use global ESLint installation",
+      "description": "Make sure you have it in your $PATH",
+      "type": "boolean",
+      "default": false
+    },
+    "showRuleIdInMessage": {
+      "title": "Show Rule ID in Messages",
+      "type": "boolean",
+      "default": true
+    },
+    "disableWhenNoEslintConfig": {
+      "title": "Disable when no ESLint config is found (in package.json or .eslintrc)",
+      "type": "boolean",
+      "default": true
+    },
+    "eslintrcPath": {
+      "title": ".eslintrc Path",
+      "description": "It will only be used when there's no config file in project",
+      "type": "string",
+      "default": ""
+    },
+    "globalNodePath": {
+      "title": "Global Node Installation Path",
+      "description": "Write the value of `npm get prefix` here",
+      "type": "string",
+      "default": ""
+    },
+    "advancedLocalNodeModules": {
+      "title": "Path to the local node_modules folder",
+      "description": "Optionally specify the path to the local node_modules folder",
+      "type": "string",
+      "default": ""
+    },
+    "eslintRulesDirs": {
+      "title": "ESLint Rules Directories",
+      "description": "Specify a comma separated list of directories for ESLint to load rules from.",
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "string"
+      }
+    },
+    "disableEslintIgnore": {
+      "title": "Don't use .eslintignore files",
+      "type": "boolean",
+      "default": false
+    },
+    "disableFSCache": {
+      "title": "Disable FileSystem Cache",
+      "description": "Paths of node_modules, .eslintignore and others are cached",
+      "type": "boolean",
+      "default": false
+    },
+    "fixOnSave": {
+      "title": "Fix errors on save",
+      "description": "Have eslint attempt to fix some errors automatically when saving the file.",
+      "type": "boolean",
+      "default": false
+    },
+    "scopes": {
+      "title": "List of scopes to run ESLint on, run `Editor: Log Cursor Scope` to determine the scopes for a file.",
+      "type": "array",
+      "default": [
+        "source.js",
+        "source.jsx",
+        "source.js.jsx",
+        "source.babel",
+        "source.js-semantic"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "rulesToSilenceWhileTyping": {
+      "title": "Silence specific rules while typing",
+      "description": "Useful when Atom fixes errors on save like `no-trailing-spaces` or `eol-last`.",
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "string"
+      }
+    },
+    "rulesToDisableWhileFixing": {
+      "title": "Disable specific rules from fixes",
+      "description": "Prevent rules from being auto-fixed by ESLint. Applies to fixes made during saves as well as when running the `Linter Eslint: Fix File` command.",
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "string"
+      }
+    },
+    "ignoreFixableRulesWhileTyping": {
+      "title": "Ignore fixable rules while typing",
+      "description": "Have the linter ignore all fixable rules during linting when editing a document. The list is automatically updated on each lint job, and requires at least one run to be populated. Only supported when using ESLint v4+.",
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "dependencies": {
+    "atom-babel6-transpiler": "^1.1.3",
+    "atom-linter": "^10.0.0",
+    "atom-package-deps": "^4.6.0",
+    "babel-preset-env": "^1.6.1",
+    "consistent-path": "^2.0.1",
+    "crypto-random-string": "^1.0.0",
+    "eslint": "^4.9.0",
+    "eslint-rule-documentation": "^1.0.18",
+    "fs-plus": "^3.0.1",
+    "resolve-env": "^1.0.0",
+    "user-home": "^2.0.0"
+  },
+  "deprecated": false,
+  "description": "Lint JavaScript on the fly, using ESLint",
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "jasmine-fix": "^1.3.1",
+    "rimraf": "^2.6.2"
+  },
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  },
+  "eslintConfig": {
+    "rules": {
+      "no-console": "off",
+      "semi": [
+        "error",
+        "never"
+      ],
+      "comma-dangle": "off",
+      "global-require": "off",
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "atom"
+          ]
+        }
+      ],
+      "object-curly-newline": [
+        "error",
+        {
+          "ObjectExpression": {
+            "minProperties": 5,
+            "multiline": true,
+            "consistent": true
+          },
+          "ObjectPattern": {
+            "minProperties": 5,
+            "multiline": true,
+            "consistent": true
+          }
+        }
+      ]
+    },
+    "extends": "airbnb-base",
+    "globals": {
+      "atom": "true"
+    },
+    "env": {
+      "node": true,
+      "browser": true
+    }
+  },
+  "homepage": "https://github.com/AtomLinter/linter-eslint#readme",
+  "license": "MIT",
+  "main": "./src/main.js",
+  "name": "linter-eslint",
+  "package-deps": [
+    "linter:2.0.0"
+  ],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "2.0.0": "provideLinter"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomLinter/linter-eslint.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "apm test"
+  },
+  "version": "8.4.1"
+}
